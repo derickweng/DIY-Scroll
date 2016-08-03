@@ -5,7 +5,7 @@
 			var Scrollbar = function(ele,opt){
 				this.$element = ele;
 				this.defaults={
-					'Content':'.scroll-cont',//滚动内容
+					'content':'.scroll-cont',//滚动内容
 					'scrollbarColor':'#999',//滚动条颜色
 					'scrollbarColorHover':'#666'//滚动条hover颜色
 				};
@@ -16,7 +16,7 @@
 					//滚动包裹区域
 					 this.scrollWrap = this.$element;
 						
-					 this.scrollContent = this.scrollWrap.children(this.options.Content); 
+					 this.scrollContent = this.scrollWrap.children(this.options.content); 
 				      //框的高度
 				      this.scrollbarCssInit();
 				      this.scrollbar = this.scrollWrap.children('.scroll-slider');
